@@ -128,7 +128,14 @@ section[id]{scroll-margin-top:90px}
     line-height: 1.8;
   }
 }
-
+@media (min-width: 761px) {
+  .service-card:first-child h3 {
+    font-size: clamp(24px, 2vw, 30px) !important;
+    overflow-wrap: normal !important;
+    word-break: keep-all !important;
+    hyphens: none !important;
+  }
+}
   </style>
 </head>
 <body>
