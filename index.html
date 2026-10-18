@@ -128,14 +128,39 @@ section[id]{scroll-margin-top:90px}
     line-height: 1.8;
   }
 }
-@media (min-width: 761px) {
+
+/* Equal specialization headings */
+
+.service-card {
+  justify-content: flex-start;
+}
+
+.service-card > div {
+  margin-top: 30px;
+}
+
+.service-card h3,
+.service-card:first-child h3 {
+  font-size: clamp(28px, 2.2vw, 34px) !important;
+  line-height: 1.15;
+  overflow-wrap: normal !important;
+  word-break: normal !important;
+  hyphens: none !important;
+  margin-bottom: 24px;
+}
+
+.service-card .service-arrow {
+  margin-top: auto;
+}
+
+/* Mobile */
+@media (max-width: 760px) {
+  .service-card h3,
   .service-card:first-child h3 {
-    font-size: clamp(24px, 2vw, 30px) !important;
-    overflow-wrap: normal !important;
-    word-break: keep-all !important;
-    hyphens: none !important;
+    font-size: 34px !important;
   }
 }
+
   </style>
 </head>
 <body>
