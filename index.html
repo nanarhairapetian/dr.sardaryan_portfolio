@@ -10,22 +10,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
   <style>
-
-.about-detail p,
-.service-card p,
-.contact-row p {
-  font-size: 16px;
-  line-height: 1.8;
-}
-
-@media (max-width: 760px) {
-  .about-detail p,
-  .service-card p,
-  .contact-row p {
-    font-size: 15px;
-    line-height: 1.8;
-  }
-}    :root{--ivory:#F7F3EE;--ink:#292725;--taupe:#A28D79;--beige:#E8DED3;--white:#fff;--max:1320px}
+   :root{--ivory:#F7F3EE;--ink:#292725;--taupe:#A28D79;--beige:#E8DED3;--white:#fff;--max:1320px}
     *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--ivory);color:var(--ink);font-family:Manrope,Arial,sans-serif;-webkit-font-smoothing:antialiased}a{color:inherit;text-decoration:none}button{font:inherit}img{display:block;width:100%;height:100%;object-fit:cover}::selection{background:var(--beige)}
     .container{width:min(calc(100% - 88px),var(--max));margin:auto}.eyebrow{font-size:10px;letter-spacing:.23em;text-transform:uppercase;font-weight:700;color:var(--taupe)}.display{font-family:'Cormorant Garamond',Georgia,serif;font-weight:400;line-height:.97;letter-spacing:-.035em}.muted{color:#6f6a64}.section{padding:112px 0}.section-title{font-size:clamp(52px,7vw,102px);margin:20px 0 24px}.button{display:inline-flex;align-items:center;justify-content:center;gap:34px;min-height:54px;padding:0 24px;border:1px solid var(--ink);font-size:10px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;transition:background .25s,color .25s,transform .25s;cursor:pointer}.button:hover{background:var(--ink);color:var(--ivory);transform:translateY(-2px)}.button.dark{background:var(--ink);color:var(--ivory)}.button.dark:hover{background:var(--taupe);border-color:var(--taupe)}
     .site-header{height:86px;position:relative;z-index:20;border-bottom:1px solid rgba(41,39,37,.14)}.header-inner{height:100%;display:flex;align-items:center;justify-content:space-between;gap:30px}.brand{display:flex;flex-direction:column;gap:4px;min-width:160px}.brand strong{font-family:'Cormorant Garamond',Georgia,serif;font-size:27px;font-weight:600;letter-spacing:-.025em;line-height:1}.brand small{font-size:8px;text-transform:uppercase;letter-spacing:.22em}.nav{display:flex;align-items:center;gap:clamp(18px,2.5vw,38px)}.nav a{font-size:10px;font-weight:700;letter-spacing:.11em;text-transform:uppercase;transition:color .2s}.nav a:hover,.nav a[aria-current]{color:var(--taupe)}.header-contact{font-size:10px;letter-spacing:.12em;text-transform:uppercase;border-bottom:1px solid var(--ink);padding-bottom:6px;font-weight:700}.menu-toggle{display:none;background:none;border:0;padding:10px;cursor:pointer}.menu-toggle span{display:block;width:25px;height:1px;background:var(--ink);margin:6px 0}
@@ -101,7 +86,50 @@ section[id]{scroll-margin-top:90px}
 #results .work-media:has(img.missing-photo)::after{content:'Место для фотографии';position:absolute;inset:0;display:flex;align-items:center;justify-content:center;text-align:center;padding:12px;font-size:11px;letter-spacing:.12em;color:#756e67}
 #results .procedure-line{margin-top:18px;padding:22px 26px;border:1px solid rgba(41,39,37,.16);background:var(--beige)}
 #results .procedure-caption{font-family:'Cormorant Garamond',Georgia,serif;font-size:clamp(26px,3vw,40px);line-height:1.15;margin:10px 0 0}
-</style>
+
+.hero-description,
+.intro-text > p,
+.intro-text .about-detail p,
+.section-head p,
+.service-card p,
+.gallery-intro,
+.results-copy p,
+.contact-section p,
+.contact-row p,
+.contact-row a {
+  font-size: 16px;
+  line-height: 1.85;
+}
+
+.nav a,
+.header-contact,
+.button,
+.eyebrow,
+.service-number,
+.gallery-hint,
+.footer p,
+.footer a {
+  font-size: 12px;
+}
+
+/* Mobile */
+@media (max-width: 760px) {
+  .hero-description,
+  .intro-text > p,
+  .intro-text .about-detail p,
+  .section-head p,
+  .service-card p,
+  .gallery-intro,
+  .results-copy p,
+  .contact-section p,
+  .contact-row p,
+  .contact-row a {
+    font-size: 15px;
+    line-height: 1.8;
+  }
+}
+
+  </style>
 </head>
 <body>
 <header class="site-header">
